@@ -44,11 +44,6 @@ cd loan-calculator # Or the actual project directory name
 # Step 3: Install the necessary dependencies.
 npm i
 
-# Step 4: Set up your API Key
-# You must register and obtain a free API key from ExchangeRate-API.
-# Then, locate where YOUR_API_KEY is used in the app code (e.g., in a .env file or directly in a service file)
-# and replace it with your actual key.
-
 # Step 5: Start the development server.
 npm run dev
 ```
@@ -64,10 +59,3 @@ Where:
 -   `P` = Principal loan amount
 -   `R` = Monthly interest rate (annual rate / 12 / 100)
 -   `N` = Loan duration in months
-
-## Currency Conversion API
-
-This app integrates with the free tier of the [ExchangeRate-API](https://www.exchangerate-api.com/) to fetch live exchange rates.
-
-**API Endpoint Example:**
-`https://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/USD`
