@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/hooks/useTheme";
 
 import Layout from "@/components/Layout";
 import Index from "./pages/Index";
+import ExchangeRates from "./pages/ExchangeRates";
 
 const queryClient = new QueryClient();
 
@@ -15,6 +16,7 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/exchange-rates" element={<ExchangeRates />} />
           </Routes>
         </Layout>
       </BrowserRouter>
